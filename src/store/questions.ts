@@ -4,6 +4,7 @@ import confetti from "canvas-confetti"
 import { persist } from "zustand/middleware";
 
 interface State {
+    reset: () => void;
     questions: Questions[],
     currentQuestion: number,
     fetchQuestions: (limit: number )=> Promise<void>
